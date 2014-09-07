@@ -1,0 +1,89 @@
+#gameContainer{
+	margin: auto;
+	background: url("../img/font-9x9.png");
+	background-size: 100%;
+}
+.introduction, #endOfGame{
+	text-align: center;
+	background: white;
+}
+#endOfGame[state='hidden']{
+	opacity: 0;
+}
+#endOfGame[state='shown']{
+	opacity: 1;
+}
+.btn-lg{
+	letter-spacing: 3px;
+	width: 200px;
+	cursor: pointer;
+}
+.top{
+	margin: auto;
+	margin-bottom: 20px;
+	background: #ECF0F1;
+	height: 80px;
+	width: 340px;
+	padding: 0 10px;
+}
+.top[state='hidden']{
+	display: none;
+}
+.top[state='shown']{
+	display: block;
+}
+.chronometer, .head, #score{
+	float: left;
+}
+.chronometer{
+	margin: 14px 0;
+	margin-left: 10px;
+}
+.chronometer, .chronometer li{
+	display: inline-block;
+	font-size: 30px;
+	padding-left: 0;
+}
+.head{
+	height: 60px;
+	width: 60px;
+	margin-top: 10px;
+	margin-left: 65px;
+}
+#score{
+	height: 60px;
+	width: 60px;
+	margin-left: 81px;
+	font-size: 30px;
+	margin-top: 15px;
+	letter-spacing: 10px;
+	text-align: center;
+}
+.button_mine{
+	height: 40px;
+	width: 40px;
+	background-color: transparent;
+	background: none;
+	background-image: url("../img/font-case.png");
+	border: 2px solid white;
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+	font-size: 26px;
+}
+.button_mine[state='flag']{
+	background: url("../img/flag.png");
+}
+.button_mine[state='mine']{
+	background: url("../img/mine.png");
+}
+.button_mine[state='empty'],
+.button_mine:not([value='']){
+	background: rgba(255, 255, 255 ,0.9);
+}
+.line{
+	clear:both;
+	margin:0;
+	background-color: transparent;
+	background: none;
+}
